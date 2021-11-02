@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import { BrowserRouter as Router , Route , Switch } from 'react-router-dom';
+//style 
+import './assets/style.scss';
+//components
+import Header from './components/header/index';
+import routes from './routes';
+import Home from './components/home/Home';
+import Footer from './components/footer/Footer';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header />
+        <div>
+        <Switch>
+          { 
+                routes.map(item => {
+                    return (
+                      <Route 
+                      render={()=> item.component}
+                      key={item.name}
+                      path={item.url}
+                      exact={item.exact}
+                      />
+                    );
+                }
+                ) 
+          }
+          <Route exact path="/">
+              <Home />
+          </Route>
+          <Route>
+              <h1 className="title is-size-2">
+                404 - Page Not Found
+              </h1>
+          </Route>
+        </Switch>
+        </div>
+        <Footer />
+      </Router>
     </div>
   );
 }
