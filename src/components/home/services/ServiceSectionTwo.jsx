@@ -1,14 +1,22 @@
 import React , {useState , useEffect }from 'react';
 import { services , serviceDetails} from '../../../data/initialState';
+import { useSelector, useDispatch } from 'react-redux';
+
+import { getActiveService, setActiveService} from '../../../reducers/eventReducer';
+
 import ServiceCard from './ServiceCard';
 const ServiceSort = () => {
     const [serviceList , setServiceList] = useState(serviceDetails);
     const [serviceListFiltered , setServiceListFiltered] = useState(serviceDetails);
-    const [activeService , setActiveService] = useState('All');
+    // const [activeService , setActiveService] = useState('All');
+
+    // console.log('service' ,serviceListFiltered);
+    const dispatch = useDispatch();
+    const activeServiceRed = useSelector(getActiveService);
     const selectService = (evt) =>{
         removeActive();
         if(evt.target.innerText){
-            setActiveService(evt.target.innerText);
+            dispatch(setActiveService(evt.target.innerText));
         }
         evt.target.classList.add('active');
     }
@@ -19,13 +27,13 @@ const ServiceSort = () => {
         });
     }
     useEffect( () =>{
-        if(activeService != 'All'){
-            const filterService = serviceList.filter(service => service.type == activeService);
+        if(activeServiceRed != 'All'){
+            const filterService = serviceList.filter(service => service.type == activeServiceRed);
             setServiceListFiltered(filterService);
         }else{
             setServiceListFiltered(serviceDetails);
         }
-    },[activeService])
+    },[activeServiceRed])
     return(
         <>
         <div className="service-tag py-2 theme-secondary service-section-two">

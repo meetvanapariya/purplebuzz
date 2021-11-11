@@ -18,7 +18,7 @@ export default() =>{
                 <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div className="align-self-center navbar-collapse flex-fill d-lg-flex justify-content-lg-between collapse " id="navbar-toggler-success">
+            <div className="align-self-center navbar-collapse  d-lg-flex justify-content-lg-between collapse " id="navbar-toggler-success">
                 <div className="flex-fill mx-xl-5 mb-2">
                     <ul className="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
                        

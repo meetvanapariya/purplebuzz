@@ -1,13 +1,14 @@
 import Home from './components/home/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Work from './components/Work';
-import Pricing from './components/Pricing';
+import About from './components/aboutus/AboutUs';
+import Contact from './components/contactus/ContactUs';
+import Work from './components/work/Work';
+import Pricing from './components/pricing/Pricing';
+
 
 const rotues = [
     {
         name: "Home",
-        url:"/Home",
+        url:"/home",
         component: <Home />
     },
     {
@@ -34,6 +35,7 @@ const rotues = [
         exact:true,
         component: <Contact />
     }
+    
 
 ];
 export const footerRoute2 = [

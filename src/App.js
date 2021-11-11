@@ -7,6 +7,7 @@ import Header from './components/header/index';
 import routes from './routes';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
+import WorkDetails from './components/work/WorkDetails';
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,9 @@ function App() {
                 }
                 ) 
           }
+          <Route exact path="/work/:id">
+              <WorkDetails />
+          </Route>
           <Route exact path="/">
               <Home />
           </Route>
