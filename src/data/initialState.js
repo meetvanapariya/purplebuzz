@@ -173,6 +173,6 @@ export const pricing = [
 ]
 
 
-const activeServiceState = ['All','All'];
+const activeServiceState = ['All','All',''];
 
 export default activeServiceState;

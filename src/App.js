@@ -8,6 +8,7 @@ import routes from './routes';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
 import WorkDetails from './components/work/WorkDetails';
+import BlogInner from './components/blogs/BlogInnerPage';
 function App() {
   return (
     <div className="App">
@@ -30,6 +31,9 @@ function App() {
           }
           <Route exact path="/work/:id">
               <WorkDetails />
+          </Route>
+          <Route exact path="/blog/:id">
+              <BlogInner />
           </Route>
           <Route exact path="/">
               <Home />

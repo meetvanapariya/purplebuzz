@@ -53,8 +53,8 @@ const FormFields = ()=>{
                 </textarea>
                 <label for="name">Message</label>
             </div>
-            <div class="col-12 btn-div">
-                <button class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Send Message</button>
+            <div className="col-12 btn-div">
+                <button className="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Send Message</button>
             </div>
         </form>
          {

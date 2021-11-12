@@ -38,10 +38,10 @@ const AboutUs = () => {
             <div className="container">
                 <h1>Our partner</h1>
                 <div className="partner-div">
-                  <PartnerCard faclass="fa fa-archive"/>
-                  <PartnerCard faclass="fa fa-archive"/>
-                  <PartnerCard faclass="fa fa-archive"/>
-                  <PartnerCard faclass="fa fa-archive"/>
+                  <PartnerCard faclassName="fa fa-archive"/>
+                  <PartnerCard faclassName="fa fa-archive"/>
+                  <PartnerCard faclassName="fa fa-archive"/>
+                  <PartnerCard faclassName="fa fa-archive"/>
                 </div>
             </div>
         </section>
@@ -76,9 +76,9 @@ const AboutUs = () => {
                 </div>
             </div>
         </section>
-        <section class="banner-bg bg-white py-5 about-section-six">
-        <div class="container my-4">
-            <div class="row text-center">
+        <section className="banner-bg bg-white py-5 about-section-six">
+        <div className="container my-4">
+            <div className="row text-center">
               <GoalBox />
               <GoalBox />
               <GoalBox />

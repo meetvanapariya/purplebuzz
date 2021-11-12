@@ -3,7 +3,7 @@ import About from './components/aboutus/AboutUs';
 import Contact from './components/contactus/ContactUs';
 import Work from './components/work/Work';
 import Pricing from './components/pricing/Pricing';
-
+import Blogs from './components/blogs/Blogs';
 
 const rotues = [
     {
@@ -28,6 +28,12 @@ const rotues = [
         url:"/pricing",
         exact:true,
         component: <Pricing />
+    },
+    {
+        name: "Blog",
+        url:"/blog",
+        exact:true,
+        component: <Blogs />
     },
     {
         name: "Contact",

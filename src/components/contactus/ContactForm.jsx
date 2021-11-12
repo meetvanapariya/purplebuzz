@@ -14,10 +14,10 @@ export default () => {
                             <i className="fa fa-archive"></i>
                         </div>
                         <div>
-                        <ul class="contact-info list-unstyled light-300">
-                        <li class="h5 mb-0">Media Contact</li>
-                        <li class="text-muted">Mr. John Doe</li>
-                        <li class="text-muted">010-020-0340</li>
+                        <ul className="contact-info list-unstyled light-300">
+                        <li className="h5 mb-0">Media Contact</li>
+                        <li className="text-muted">Mr. John Doe</li>
+                        <li className="text-muted">010-020-0340</li>
                     </ul>
                         </div>
                     </div>
@@ -26,10 +26,10 @@ export default () => {
                             <i className="fa fa-archive"></i>
                         </div>
                         <div>
-                        <ul class="contact-info list-unstyled light-300">
-                        <li class="h5 mb-0">Media Contact</li>
-                        <li class="text-muted">Mr. John Doe</li>
-                        <li class="text-muted">010-020-0340</li>
+                        <ul className="contact-info list-unstyled light-300">
+                        <li className="h5 mb-0">Media Contact</li>
+                        <li className="text-muted">Mr. John Doe</li>
+                        <li className="text-muted">010-020-0340</li>
                     </ul>
                         </div>
                     </div>
@@ -38,10 +38,10 @@ export default () => {
                             <i className="fa fa-archive"></i>
                         </div>
                         <div>
-                        <ul class="contact-info list-unstyled light-300">
-                        <li class="h5 mb-0">Media Contact</li>
-                        <li class="text-muted">Mr. John Doe</li>
-                        <li class="text-muted">010-020-0340</li>
+                        <ul className="contact-info list-unstyled light-300">
+                        <li className="h5 mb-0">Media Contact</li>
+                        <li className="text-muted">Mr. John Doe</li>
+                        <li className="text-muted">010-020-0340</li>
                     </ul>
                         </div>
                     </div>
